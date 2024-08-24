@@ -1,0 +1,39 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Watch List</h2>
+
+
+    <div class="container">
+        {% if user.is_authenticated and not listing_data.owner.username %}
+
+                <div class="alert alert-danger" role="alert">
+                    This product is closed for bidding.
+                </div>
+                 <div class="alert alert-warning" role="alert">
+                    Congratulations! You have won the auction.
+                </div>
+
+        {% endif %}
+    </div>
+
+
+    <div class="row mx-2">
+        {% for listing in listings %}
+
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="{{ listing.imageUrl }}" class="card-img-top" alt="{{ listing.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ listing.title }}</h5>
+                    <p class="card-text">{{ listing.description }}</p>
+                    <h4><strong>Price To Pay:</strong></h4>
+                    <p><strong>${{ listing.price.bid }}</strong></p>
+                </div>
+            </div>
+
+
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

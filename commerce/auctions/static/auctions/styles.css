@@ -1,0 +1,90 @@
+body {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.form-control select {
+    width: 20%;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 5px;
+}
+
+.nav a {
+    color: #4626d2;
+
+}
+
+.user {
+    color: darkorange;
+}
+
+.nav .nav-link {
+    background-color: #e1e7e2;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+
+}
+
+.card {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 5px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 5px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.row h2 {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
